@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Victoria mars](https://up.htmlacademy.ru/htmlcss/36/user/2140879).
-* Наставник: `Неизвестно`.
+- Студент: [Victoria mars](https://up.htmlacademy.ru/htmlcss/36/user/2140879).
+- Наставник: Екатерина Комнатная.
 
 ---
 
