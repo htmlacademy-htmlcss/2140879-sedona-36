@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -24,10 +25,10 @@
             >
           </li>
           <li class="navigation-item">
-            <a class="navigation-list" href="#">О седоне</a>
+            <a class="navigation-link" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-list" href="#">Гостиницы</a>
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -42,7 +43,7 @@
             </a>
           </li>
           <li class="navigation-item button">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -50,25 +51,27 @@
     <main class="main-index">
       <!-- Логотип-->
       <h1 class="visually-hidden">Седона</h1>
-      <img
-        class="logo"
-        src="/images/hero/welcome.svg"
-        weight="458px"
-        hight="352px"
-        alt="Welcom to the gorgeous Sedona"
-      />
+      <div class="hero">
+        <img
+          class="logo"
+          src="/images/hero/welcome.svg"
+          weight="458px"
+          hight="352px"
+          alt="Welcom to the gorgeous Sedona"
+        />
+      </div>
       <!-- Заголовок1 -->
       <h2 class="visually-hidden">Преимущества</h2>
       <h3 class="title">
         Седона — небольшой городок в Аризоне, заслуживающий большего!
       </h3>
-      <span class="reasons"
-        >Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span
-      >
+      <p class="reasons">
+        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+      </p>
       <!-- Преимущества -->
 
       <ul class="advantages-list">
-        <li class="advantages-item">
+        <li class="advantages-item blue-box">
           <h4 class="advantages-title">Настоящий городок</h4>
           <p class="advantages-description">
             Седона — не аттракцион для<br />
@@ -89,7 +92,7 @@
             находятся очень близко
           </p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item light-blue-box">
           <h4 class="advantages-title">Красивая дорога</h4>
           <p class="advantages-description">
             Ехать в Седону из Лас-Вегаса<br />
@@ -110,7 +113,7 @@
             alt="Мость дьявола"
           />
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item blue-box">
           <h4 class="advantages-title">Там есть мост дьявола</h4>
           <p class="advantages-description">
             Да, по нему можно пройти!<br />
@@ -121,10 +124,10 @@
       </ul>
       <!-- Заголовок2 -->
       <h3 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
-      <span class="reasons">Опытный персонал и качественное обслуживание!</span>
+      <p class="reasons">Опытный персонал и качественное обслуживание!</p>
       <!-- Преимущества -->
       <ul class="advantages-list">
-        <li class="advantages-item">
+        <li class="advantages-item light-blue-box">
           <h4 class="advantages-title">Жильё</h4>
           <p class="advantages-description">
             Рекомендуем пожить<br />
@@ -139,7 +142,7 @@
             вы не разочаруетесь!
           </p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item light-blue-box">
           <h4 class="advantages-title">Сувениры</h4>
           <p class="advantages-description">
             Не только китайского,<br />
@@ -149,19 +152,18 @@
       </ul>
       <!-- Заголовок3 -->
       <h3 class="title">Заинтересовались</h3>
-      <span class="reasons"
-        >Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
-        гостиниц в Седоне</span
-      >
+      <p class="reasons">
+        Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+        гостиниц в Седоне
+      </p>
       <div class="button">
-        <a href="#">Поиск гостиницы в седоне</a>
+        <a class="navigation-link button" href="#">Поиск гостиницы в седоне</a>
       </div>
       <!-- Заголовок4 -->
       <h3 class="title">Подпишитесь</h3>
-      <span class="reasons"
-        >Только полезная информация и никакого спама, честное
-        бойскаутское!</span
-      >
+      <p class="reasons">
+        Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
       <div>
         <form action="https://echo.htmlacademy.ru">
           <input
@@ -171,8 +173,8 @@
             placeholder="Ваш e-mail"
             required
           />
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+          <button class="newsletter-button" type="submit">
+            <p class="subscribe">Подписаться</p>
           </button>
         </form>
       </div>
@@ -185,20 +187,26 @@
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="socials" href="https://t.me/htmlacademy">
+              <a
+                class="navigation-link socials"
+                href="https://t.me/htmlacademy"
+              >
                 <span class="visually-hidden">Телеграмм</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a
-                class="socials"
+                class="navigation-link socials"
                 href="https://www.youtube.com/user/htmlacademyru"
               >
                 <span class="visually-hidden">youtube</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="socials" href="https://twitter.com/htmlacademy_ru">
+              <a
+                class="navigation-link socials"
+                href="https://twitter.com/htmlacademy_ru"
+              >
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
@@ -209,9 +217,12 @@
           <a class="contacts-phone" href="tel:+78128121212"
             >Тел.: +7 (812) 812-12-12</a
           >
-          <a class="html-academy-image-link" href="https://htmlacademy.ru/">
+          <a
+            class="navigation-link html-academy-image-link"
+            href="https://htmlacademy.ru/"
+          >
             <img
-              src="/images/footer/logo-down.svg"
+              src="/images/footer/logo-academy.svg"
               width="115px"
               height="33px"
               alt="Логотип внизу страницы"
