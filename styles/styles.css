@@ -13,12 +13,31 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
   background-color: #f2f2f2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  background: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -59,6 +78,36 @@ body {
   line-height: 36px;
 }
 
+.page-header {
+  display: flex;
+}
+
+.logo {
+  position: relative;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 420px;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+/* Main */
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 /* Hero */
 .hero {
   background-image: url(/images/hero/index-background.jpg);
@@ -67,7 +116,16 @@ body {
   background-position: center;
   text-align: center;
 }
+
 /* Advantages */
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex: wrap;
+}
 .title {
   font-weight: 700;
   font-size: 30px;
@@ -91,6 +149,12 @@ body {
   align-items: center;
   padding: 80px 85px;
   text-align: center;
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages-photo {
+  width: 1200px;
 }
 
 .blue-box {
