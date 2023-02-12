@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  background: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+/* Pages */
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-search {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.page-header {
+  display: flex;
+}
+
+.logo {
+  position: relative;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 420px;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+/* Main */
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* Заголовки */
+.header-resons {
+  width: 1200px;
+  min-height: 246px;
+  padding: 64px 0px;
+}
+
+/* Hero */
+.hero {
+  background-image: url(/images/hero/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+/* Advantages */
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.black-title {
+  color: #000000;
+}
+
+.reasons {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-item {
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages-photo {
+  width: 1200px;
+  display: flex;
+}
+.advantages-photo-text {
+  width: 400px;
+  min-height: 385px;
+}
+
+.blue-box {
+  color: #ffffff;
+  background: #82b3d3;
+}
+
+.light-blue-box {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+/* Подписаться */
+.main-subscribe {
+  width: 1200px;
+  min-height: 406px;
+  display: flex;
+  flex-direction: column;
+  padding: 96px 304px;
+}
+
+.section-subscribe {
+  width: 1200px;
+  min-height: 415px;
+  background-image: url(/images/advantages/subscribe.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 258px 104px;
+}
+.title-wight {
+  color: #ffffff;
+}
+
+/* Кнопка подписаться */
+.newsletter-button {
+  font-family: "PT Sans";
+  padding: 8px 50px;
+  height: 52px;
+  background: #82b3d3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-subscribe {
+  background: #ffffff;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
