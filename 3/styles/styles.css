@@ -13,9 +13,15 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -108,6 +114,13 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+/* Заголовки */
+.header-resons {
+  width: 1200px;
+  min-height: 246px;
+  padding: 64px 0px;
+}
+
 /* Hero */
 .hero {
   background-image: url(/images/hero/index-background.jpg);
@@ -124,7 +137,7 @@ body {
   padding: 0;
   text-align: center;
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 .title {
   font-weight: 700;
@@ -132,6 +145,9 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .black-title {
@@ -142,12 +158,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #000000;
+  color: #333333;
 }
 
 .advantages-item {
   align-items: center;
-  padding: 80px 85px;
   text-align: center;
   width: 400px;
   min-height: 384px;
@@ -155,6 +170,11 @@ body {
 
 .advantages-photo {
   width: 1200px;
+  display: flex;
+}
+.advantages-photo-text {
+  width: 400px;
+  min-height: 385px;
 }
 
 .blue-box {
@@ -178,8 +198,31 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+/* Подписаться */
+.main-subscribe {
+  width: 1200px;
+  min-height: 406px;
+  display: flex;
+  flex-direction: column;
+  padding: 96px 304px;
+}
+
+.section-subscribe {
+  width: 1200px;
+  min-height: 415px;
+  background-image: url(/images/advantages/subscribe.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 258px 104px;
+}
+.title-wight {
+  color: #ffffff;
+}
+
 /* Кнопка подписаться */
 .newsletter-button {
+  font-family: "PT Sans";
   padding: 8px 50px;
   height: 52px;
   background: #82b3d3;
@@ -196,6 +239,17 @@ body {
 }
 
 /* Footer */
+.footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+
 .contacts-phone {
   font-weight: 400;
   font-size: 40px;
