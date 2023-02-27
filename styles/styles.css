@@ -133,7 +133,7 @@ body {
 .header-resons {
   width: 1200px;
   min-height: 246px;
-  padding: 64px 0px;
+  padding: 64px 0;
 }
 
 /* Hero */
@@ -272,14 +272,16 @@ body {
 .subscribe-wrapper {
   display: flex;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
 }
 
 .subscribe-mail {
+  display: block;
   width: 452px;
-  height: 52px;
+  min-height: 52px;
   background: #f2f2f2;
   padding: 0;
+  border-radius: 4px 0px 0px 4px;
 }
 /* Footer */
 .footer-container {
@@ -289,8 +291,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 40px 70px 30px;
   gap: 40px;
+  margin: 0;
 }
 
 .contacts-phone {
@@ -301,4 +304,10 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+.footer-social-list {
+  display: flex;
+}
+.contacts-phone {
+  padding: 0;
 }
