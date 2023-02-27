@@ -253,6 +253,7 @@ body {
   padding: 8px 50px;
   width: 376px;
   height: 52px;
+  margin-top: 54px;
 }
 
 /* Кнопка подписаться */
@@ -271,14 +272,13 @@ body {
 
 .subscribe-wrapper {
   display: flex;
-  width: 232px;
-  min-height: 52px;
+  margin-top: 54px;
 }
 
 .subscribe-mail {
   display: block;
   width: 452px;
-  min-height: 52px;
+  height: 52px;
   background: #f2f2f2;
   padding: 0;
   border-radius: 4px 0px 0px 4px;
@@ -293,7 +293,6 @@ body {
   align-items: center;
   padding: 40px 70px 30px;
   gap: 40px;
-  margin: 0;
 }
 
 .contacts-phone {
