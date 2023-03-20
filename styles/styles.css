@@ -266,6 +266,7 @@ body {
   align-items: center;
   padding: 96px 258px 104px;
   background-color: #000000;
+  background-repeat: no-repeat;
 }
 .title-wight {
   color: #ffffff;
@@ -294,7 +295,7 @@ body {
 
 .subscribe-wrapper {
   display: flex;
-  margin-top: 54px;
+  margin-top: 30px;
 }
 
 .subscribe-mail {
